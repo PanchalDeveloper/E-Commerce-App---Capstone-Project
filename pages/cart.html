@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Favicons -->
+    <link
+      rel="shortcut icon"
+      href="/static/images/favicons/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      sizes="16x16"
+      href="/static/images/favicons/favicon-16x16.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      sizes="32x32"
+      href="/static/images/favicons/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link
+      href="/static/images/favicons/apple-touch-icon.png"
+      rel="apple-touch-icon"
+      sizes="180x180"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- External StyleSheet -->
+
+    <link rel="stylesheet" href="/static/css/utility.css" />
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <link rel="stylesheet" href="/static/css/media-queries.css" />
+    
+    <!-- External Scripts -->
+    <script src="/static/js/script.js"></script>
+    
+    <title>Cart - Ecommerce</title>
+  </head>
+  <body>
+    <main>
+      <!-- Products Added Cart -->
+      <div class="container-fluid my-5 py-5">
+        <div class="card-section row g-4">
+          <div class="col-lg-8">
+            <section class="cart-items-area card">
+              <h2 class="card-header text-center">Items</h2>
+              <div id="cartItems" class="cart-items card-body">
+                <h5 class="text-center py-5 lh-lg">Your Cart is Empty!</h5>
+              </div>
+            </section>
+          </div>
+          <!-- Product Price Checklist -->
+          <div class="col-lg-4">
+            <section class="cart-items  card">
+              <h2 class="card-header text-center">Summary</h2>
+              <div class="price-summary-area card-body d-grid">
+                <ul class="cart-estimates list-group list-group-flush">
+                  <li id="total-item-price" class="list-group-item">
+                    <h6 class="cart-estimate-title">Cost</h6>
+                    <h6 class="cart-estimate-body">
+                      <span class="currency">$</span><span class="amount">0</span>
+                    </h6>
+                  </li>
+                  <li id="total-discount" class="list-group-item">
+                    <h6 class="cart-estimate-title">Discount</h6>
+                    <h6 class="cart-estimate-body">
+                      - <span class="currency">$</span><span class="amount">0</span>
+                    </h6>
+                  </li>
+                  <li id="total-shipping-price" class="list-group-item">
+                    <h6 class="cart-estimate-title">Shipping</h6>
+                    <h6 class="cart-estimate-body">
+                      <span class="currency">$</span><span class="amount">0</span>
+                    </h6>
+                  </li>
+                    <hr class="container-devicer mx-2" />
+                  <li id="total-price" class="list-group-item">
+                    <h4 class="cart-estimate-title">Total</h4>
+                    <h4 class="cart-estimate-body">
+                      <span class="currency">$</span><span class="amount">0</span>
+                    </h4>
+                  </li>
+                </ul>
+                <button id="checkout-btn" class="btn btn-main mx-auto">Checkout</button>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Script to add Header & Footer Dynamically -->
+    <script src="/static/js/header-footer-loader.js"></script>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

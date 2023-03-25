@@ -1,0 +1,147 @@
+<!-- Site Header -->
+<header>
+  <nav class="navbar nav-belt navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/"
+        ><img src="/static/images/logo.png" alt="Site Logo" width="100px"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <form class="d-flex">
+              <input
+                class="form-control br-0 br-4"
+                type="search"
+                placeholder="Product name, Category name, etc."
+                aria-label="Search"
+              />
+              <button class="btn btn-main fw-bold br-0 br-2" type="submit">
+                Search
+              </button>
+            </form>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/login.html"
+              ><button type="button" class="btn btn-main fw-bold">
+                Login
+              </button></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-4" href="/pages/cart.html">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <nav class="nav-main navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container-fluid">
+      <ul class="navbar-nav flex-row flex-wrap justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active px-3" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link active px-3"
+            aria-current="page"
+            href="/pages/products.html"
+            >All Products</a
+          >
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link active px-3 dropdown-toggle"
+            href="#Women"
+            id="navbarDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Women
+          </a>
+          <ul
+            class="dropdown-menu border-0 shadow"
+            aria-labelledby="navbarDropdown"
+          >
+            <li><a class="dropdown-item" href="/pages/women.html">All</a></li>
+            <li>
+              <a class="dropdown-item" href="/pages/women-dresses.html/"
+                >Dresses</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="/pages/women-pants.html/">Pants</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="/pages/women-skirts.html/"
+                >Skirts</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link active px-3 dropdown-toggle"
+            href="#Men"
+            id="navbarDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Men
+          </a>
+          <ul
+            class="dropdown-menu border-0 shadow"
+            aria-labelledby="navbarDropdown"
+          >
+            <li><a class="dropdown-item" href="/pages/men.html">All</a></li>
+            <li>
+              <a class="dropdown-item" href="/pages/men-shirts.html">Shirts</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="/pages/men-pants.html/">Pants</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="/pages/men-hoodies.html/"
+                >Hoodies</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link active px-3"
+            aria-current="page"
+            href="/pages/kids.html"
+            >Kids</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link active px-3"
+            aria-current="page"
+            href="/pages/contact-us.html"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
