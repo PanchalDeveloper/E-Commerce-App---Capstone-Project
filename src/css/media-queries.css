@@ -1,0 +1,31 @@
+/* Large screen devices */
+@media (min-width: 992px) {
+  .container-fluid{
+    padding-inline: 3.5rem;
+  }
+
+  .form-control[type="search"]{
+    width: min(35rem, 1250px);
+  }
+}
+
+/* Medium screen devices */
+@media (max-width: 991.9px) {
+  .nav-belt .navbar-nav {
+    margin: 0.75rem;
+  }
+  
+  .nav-belt .nav-item {
+    max-width: 80%;
+  }
+
+  /* div.top-banner{
+    padding-block: 25vh;
+  } */
+}
+
+@media (max-width: 576px) {
+  div.top-banner{
+    padding-block: 8vh;
+  }
+}
