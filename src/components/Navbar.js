@@ -1,12 +1,12 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import logo from '../images/logo.png';
 
-export default function Navbar(props) {
+export default function Navbar() {
     return (
         <nav className="navbar nav-belt navbar-expand-lg navbar-light">
             <div className="container-fluid">
                 <a className="navbar-brand" href="/">
-                    <img src={props.logo} alt="Site Logo" width="100px"/>
+                    <img src={logo} alt="Site Logo" width="100px"/>
                 </a>
                 <button
                     className="navbar-toggler"
@@ -54,12 +54,4 @@ export default function Navbar(props) {
             </div>
         </nav>
     )
-}
-
-Navbar.propTypes = {
-    logo: PropTypes.string.isRequired
-}
-
-Navbar.defaultProps = {
-    logo: "./static/images/logo.png"
 }

@@ -12,7 +12,7 @@ export default function NavbarSecondary(props) {
                         <a
                             className="nav-link active px-3"
                             aria-current="page"
-                            href="/pages/products.html"
+                            href="/products"
                         >All Products</a
                         >
                     </li>
@@ -31,17 +31,17 @@ export default function NavbarSecondary(props) {
                             className="dropdown-menu border-0 shadow"
                             aria-labelledby="navbarDropdown"
                         >
-                            <li><a className="dropdown-item" href="/pages/women.html">All</a></li>
+                            <li><a className="dropdown-item" href="/products/women">All</a></li>
                             <li>
-                                <a className="dropdown-item" href="/pages/women-dresses.html/"
+                                <a className="dropdown-item" href="/products/women-dresses/"
                                 >Dresses</a
                                 >
                             </li>
                             <li>
-                                <a className="dropdown-item" href="/pages/women-pants.html/">Pants</a>
+                                <a className="dropdown-item" href="/products/women-pants/">Pants</a>
                             </li>
                             <li>
-                                <a className="dropdown-item" href="/pages/women-skirts.html/"
+                                <a className="dropdown-item" href="/products/women-skirts/"
                                 >Skirts</a
                                 >
                             </li>
@@ -62,15 +62,15 @@ export default function NavbarSecondary(props) {
                             className="dropdown-menu border-0 shadow"
                             aria-labelledby="navbarDropdown"
                         >
-                            <li><a className="dropdown-item" href="/pages/men.html">All</a></li>
+                            <li><a className="dropdown-item" href="/products/men">All</a></li>
                             <li>
-                                <a className="dropdown-item" href="/pages/men-shirts.html">Shirts</a>
+                                <a className="dropdown-item" href="/products/men-shirts">Shirts</a>
                             </li>
                             <li>
-                                <a className="dropdown-item" href="/pages/men-pants.html/">Pants</a>
+                                <a className="dropdown-item" href="/products/men-pants/">Pants</a>
                             </li>
                             <li>
-                                <a className="dropdown-item" href="/pages/men-hoodies.html/"
+                                <a className="dropdown-item" href="/products/men-hoodies/"
                                 >Hoodies</a
                                 >
                             </li>
@@ -80,7 +80,7 @@ export default function NavbarSecondary(props) {
                         <a
                             className="nav-link active px-3"
                             aria-current="page"
-                            href="/pages/kids.html"
+                            href="/products/kids"
                         >Kids</a
                         >
                     </li>
@@ -88,7 +88,7 @@ export default function NavbarSecondary(props) {
                         <a
                             className="nav-link active px-3"
                             aria-current="page"
-                            href="/pages/contact-us.html"
+                            href="/contact-us"
                         >Contact</a
                         >
                     </li>

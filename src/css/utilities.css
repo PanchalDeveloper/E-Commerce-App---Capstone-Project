@@ -1,23 +1,23 @@
 :root {
   /* Colors */
-  --clr-1: #d5d21b;
-  --clr-1-1: #aeab04;
-  --clr-1-2: #848201;
-  --clr-1-3: rgba(213, 210, 27, 0.3);
-  --clr-3: #262626;
-  --clr-3-1: rgba(38, 38, 38, 0.9);
-  --clr-3-2: rgba(0, 0, 0, 0.4);
-  --clr-4: #f2f2f2;
-  --clr-5: #9d9d9d;
-  --clr-6: rgba(190, 190, 190, 0.55);
+  --app-global-clr-1: #d5d21b;
+  --app-global-clr-1-1: #aeab04;
+  --app-global-clr-1-2: #848201;
+  --app-global-clr-1-3: rgba(213, 210, 27, 0.3);
+  --app-global-clr-3: #262626;
+  --app-global-clr-3-1: rgba(38, 38, 38, 0.9);
+  --app-global-clr-3-2: rgba(0, 0, 0, 0.4);
+  --app-global-clr-4: #f2f2f2;
+  --app-global-clr-5: #9d9d9d;
+  --app-global-clr-6: rgba(190, 190, 190, 0.55);
 
   /* Font Size */
-  --f-s-1: min(1.75rem + 1.25vw, 6rem);
-  --f-s-2: min(1.5rem + 1.15vw, 5rem);
-  --f-s-3: min(1.25rem + 1.05vw, 6rem);
-  --f-s-4: min(1.15rem + 0.95vw, 3rem);
-  --f-s-5: min(0.75rem + 0.85vw, 2rem);
-  --f-s-6: min(0.5rem + 0.75vw, 1rem);
+  --fs-cust-1: min(1.75rem + 1.25vw, 6rem);
+  --fs-cust-2: min(1.5rem + 1.15vw, 5rem);
+  --fs-cust-3: min(1.25rem + 1.05vw, 6rem);
+  --fs-cust-4: min(1.15rem + 0.95vw, 3rem);
+  --fs-cust-5: min(0.75rem + 0.85vw, 2rem);
+  --fs-cust-6: min(0.5rem + 0.75vw, 1rem);
   
   /* Font Size */
   --fw-1: 400;
@@ -26,9 +26,9 @@
   --fw-4: bold;
 
   /* Radius */
-  --radius-1: 8px;
-  --radius-2: 12px;
-  --radius-3: 2rem;
+  --br-cust-1: 8px;
+  --br-cust-2: 12px;
+  --br-cust-3: 2rem;
 
   --product-card-gap: 1rem;
 }
@@ -45,16 +45,16 @@
   border-radius: 0px;
 }
 .br-1 {
-  border-top-left-radius: var(--radius-1);
+  border-top-left-radius: var(--br-cust-1);
 }
 .br-2 {
-  border-top-right-radius: var(--radius-1);
+  border-top-right-radius: var(--br-cust-1);
 }
 .br-3 {
-  border-bottom-right-radius: var(--radius-1);
+  border-bottom-right-radius: var(--br-cust-1);
 }
 .br-4 {
-  border-bottom-left-radius: var(--radius-1);
+  border-bottom-left-radius: var(--br-cust-1);
 }
 
 .container-fluid {
@@ -62,35 +62,35 @@
 }
 
 .btn.btn-main {
-  color: var(--clr-3);
-  border: var(--clr-1-1);
-  background-color: var(--clr-1);
+  color: var(--app-global-clr-3);
+  border: var(--app-global-clr-1-1);
+  background-color: var(--app-global-clr-1);
   user-select: none;
   -webkit-user-select: none;
   -webkit-user-drag: none;
 }
 
 .btn.btn-main:hover {
-  background-color: var(--clr-1-1);
+  background-color: var(--app-global-clr-1-1);
 }
 
 .btn.btn-main:is(:active, :focus-visible) {
-  color: var(--clr-3);
-  background-color: var(--clr-1-2);
+  color: var(--app-global-clr-3);
+  background-color: var(--app-global-clr-1-2);
 }
 
 section > h1 {
-  font-size: var(--f-s-2);
+  font-size: var(--fs-cust-2);
   font-weight: bold;
 }
 
 section > h2 {
-  font-size: var(--f-s-3);
+  font-size: var(--fs-cust-3);
   font-weight: 600;
 }
 
 a.no-link{
-  color: var(--clr-3);
+  color: var(--app-global-clr-3);
   text-decoration: none;
 }
 
@@ -99,10 +99,10 @@ a.no-link:hover{
 }
 
 li > a.nav-link, a.nav-link + .dropdown-menu .dropdown-item {
-  font-size: var(--f-s-6);
+  font-size: var(--fs-cust-6);
 }
 h5 > a.nav-link {
-  font-size: var(--f-s-5);
+  font-size: var(--fs-cust-5);
 }
 
 .product-card.card {
@@ -115,7 +115,7 @@ h5 > a.nav-link {
 }
 .product-card.card:hover {
   transform: scale(1.03);
-  box-shadow: 0 0 0.75rem var(--clr-3-2);
+  box-shadow: 0 0 0.75rem var(--app-global-clr-3-2);
 }
 
 .product-card .card-img-top {
@@ -125,9 +125,9 @@ h5 > a.nav-link {
 }
 
 .product-card .card-title {
-  font-size: var(--f-s-5);
+  font-size: var(--fs-cust-5);
 }
 .product-card .card-text,
 .product-card .btn {
-  font-size: var(--f-s-6);
+  font-size: var(--fs-cust-6);
 }
