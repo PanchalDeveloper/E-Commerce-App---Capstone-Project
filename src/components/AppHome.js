@@ -1,7 +1,7 @@
 import React from 'react'
 import bannerTopBgImg from '../images/banner-img-1.webp'
 import bannerTxtLogo from '../images/banner-text-image.png'
-import FeaturedProductsCarousel from './FeaturedProductsCarousel'
+import ProductCardsCarousel from './ProductCardsCarousel'
 
 export default function AppHome() {
 
@@ -31,13 +31,13 @@ export default function AppHome() {
           <h1 className="text-center mb-5">Featured Products</h1>
 
           {/* Carousel for big screens */}
-          <FeaturedProductsCarousel carouselId="featured-carousel-lg" carouselContainerClass="d-none d-lg-block" productsPerSlide="5"/>
+          <ProductCardsCarousel carouselId="featured-carousel-lg" carouselContainerClass="d-none d-lg-block" productsPerSlide="5"/>
 
           {/* Carousel for medium screens */}
-          <FeaturedProductsCarousel carouselId="featured-carousel-md" carouselContainerClass="d-none d-md-block d-lg-none" productsPerSlide="3"/>
+          <ProductCardsCarousel carouselId="featured-carousel-md" carouselContainerClass="d-none d-md-block d-lg-none" productsPerSlide="3"/>
 
           {/* Carousel for small screens */}
-          <FeaturedProductsCarousel carouselId="featured-carousel-sm" carouselContainerClass="d-block d-md-none" productsPerSlide="1"/>
+          <ProductCardsCarousel carouselId="featured-carousel-sm" carouselContainerClass="d-block d-md-none" productsPerSlide="1"/>
         </section>
       </div>
     </>
