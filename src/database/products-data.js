@@ -7,7 +7,8 @@ const productsData = [
     "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia ipsum ipsa quaerat! ",
     "cover_img": require("../images/products/product-1.jpg"),
     "imgs":  [],
-    "category": ["men", "shirt"]
+    "category": ["mens", "shirt"],
+    "shipping":45
   },
   {
     "_id": "2",
@@ -17,7 +18,7 @@ const productsData = [
     "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, explicabo. Dicta, odio hic sit ullam modi eaque animi ipsam quaerat!",
     "cover_img": require("../images/products/product-2.jpg"),
     "imgs":  [],
-    "category": ["women", "dress"]
+    "category": ["womens", "dress"]
   },
   {
     "_id": "3",
@@ -27,7 +28,9 @@ const productsData = [
     "info": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque nostrum magni minus praesentium incidunt alias dignissimos! ",
     "cover_img": require("../images/products/product-3.jpg"),
     "imgs":  [],
-    "category": ["men", "shirt"]
+    "category": ["mens", "shirt"],
+    "discount":6,
+    "shipping":50
   },
   {
     "_id": "4",
@@ -37,7 +40,9 @@ const productsData = [
     "info": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, molestias perferendis? Fugit, aspernatur eligendi! ",
     "cover_img": require("../images/products/product-4.jpg"),
     "imgs":  [],
-    "category": ["women", "dress"]
+    "category": ["womens", "dress"],
+    "discount":2,
+    "shipping":20
   },
   {
     "_id": "5",
@@ -47,7 +52,8 @@ const productsData = [
     "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus temporibus numquam labore quos unde, aliquid, voluptates, corporis explicabo soluta maxime recusandae eius? ",
     "cover_img": require("../images/products/product-5.jpg"),
     "imgs":  [],
-    "category": ["women", "jacket"]
+    "category": ["womens", "jacket"],
+    "shipping":39
   },
   {
     "_id": "6",
@@ -57,7 +63,7 @@ const productsData = [
     "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus temporibus numquam labore quos unde, aliquid, voluptates, corporis explicabo soluta maxime recusandae eius? ",
     "cover_img": require("../images/products/product-6.jpg"),
     "imgs":  [],
-    "category": ["men", "shirt"]
+    "category": ["mens", "shirt"]
   },
   {
     "_id": "7",
@@ -67,7 +73,9 @@ const productsData = [
     "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus temporibus numquam labore quos unde, aliquid, voluptates, corporis explicabo soluta maxime recusandae eius? ",
     "cover_img": require("../images/products/product-7.jpg"),
     "imgs":  [],
-    "category": ["men", "t-shirt"]
+    "category": ["mens", "t-shirt"],
+    "discount":12,
+    "shipping":67
   },
   {
     "_id": "8",
@@ -77,7 +85,7 @@ const productsData = [
     "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus temporibus numquam labore quos unde, aliquid, voluptates, corporis explicabo soluta maxime recusandae eius? ",
     "cover_img": require("../images/products/product-8.jpg"),
     "imgs":  [],
-    "category": ["women", "dress", "full-piece"]
+    "category": ["womens", "dress", "full-piece"]
   },
   {
     "_id": "9",
@@ -87,7 +95,8 @@ const productsData = [
     "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus temporibus numquam labore quos unde, aliquid, voluptates, corporis explicabo soluta maxime recusandae eius? ",
     "cover_img": require("../images/products/product-9.jpg"),
     "imgs":  [],
-    "category": ["men", "shirt", "kurta"]
+    "category": ["mens", "shirt", "kurta"],
+    "discount":5
   },
   {
     "_id": "10",
@@ -97,8 +106,10 @@ const productsData = [
     "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus temporibus numquam labore quos unde, aliquid, voluptates, corporis explicabo soluta maxime recusandae eius? ",
     "cover_img": require("../images/products/product-10.jpg"),
     "imgs":  [],
-    "category": ["women", "dress"]
+    "category": ["womens", "dress"],
+    "discount":17,
+    "shipping":62
   }
 ];
 
-export { productsData };
+export default productsData;

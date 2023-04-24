@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function NavbarSecondary(props) {
   return (
@@ -6,91 +7,84 @@ export default function NavbarSecondary(props) {
             <div className="container-fluid">
                 <ul className="navbar-nav flex-row flex-wrap justify-content-center">
                     <li className="nav-item">
-                        <a className="nav-link active px-3" aria-current="page" href="/">Home</a>
+                        <Link className="nav-link active px-3" aria-current="page" to="/">Home</Link>
                     </li>
                     <li className="nav-item">
-                        <a
+                        <Link
                             className="nav-link active px-3"
                             aria-current="page"
-                            href="/products"
-                        >All Products</a
-                        >
+                            to="/products"
+                        >All Products
+                        </Link>
                     </li>
                     <li className="nav-item dropdown">
-                        <a
+                        <Link
                             className="nav-link active px-3 dropdown-toggle"
-                            href="#Women"
+                            to="#Women"
                             id="navbarDropdown"
                             role="button"
                             data-bs-toggle="dropdown"
                             aria-expanded="false"
                         >
                             Women
-                        </a>
+                        </Link>
                         <ul
                             className="dropdown-menu border-0 shadow"
                             aria-labelledby="navbarDropdown"
                         >
-                            <li><a className="dropdown-item" href="/products/women">All</a></li>
                             <li>
-                                <a className="dropdown-item" href="/products/women-dresses/"
-                                >Dresses</a
-                                >
+                                <Link className="dropdown-item" to="/products/womens">All</Link>
                             </li>
                             <li>
-                                <a className="dropdown-item" href="/products/women-pants/">Pants</a>
+                                <Link className="dropdown-item" to="/products/womens?categorytree=dress">Dresses</Link>
                             </li>
                             <li>
-                                <a className="dropdown-item" href="/products/women-skirts/"
-                                >Skirts</a
-                                >
+                                <Link className="dropdown-item" to="/products/womens?categorytree=pant">Pants</Link>
+                            </li>
+                            <li>
+                                <Link className="dropdown-item" to="/products/womens?categorytree=skirt">Skirts</Link>
                             </li>
                         </ul>
                     </li>
                     <li className="nav-item dropdown">
-                        <a
+                        <Link
                             className="nav-link active px-3 dropdown-toggle"
-                            href="#Men"
+                            to="#Men"
                             id="navbarDropdown"
                             role="button"
                             data-bs-toggle="dropdown"
                             aria-expanded="false"
-                        >
-                            Men
-                        </a>
+                        >Men
+                        </Link>
                         <ul
                             className="dropdown-menu border-0 shadow"
                             aria-labelledby="navbarDropdown"
                         >
-                            <li><a className="dropdown-item" href="/products/men">All</a></li>
+                            <li><Link className="dropdown-item" to="/products/mens">All</Link></li>
                             <li>
-                                <a className="dropdown-item" href="/products/men-shirts">Shirts</a>
+                                <Link className="dropdown-item" to="/products/mens?categorytree=shirt">Shirts</Link>
                             </li>
                             <li>
-                                <a className="dropdown-item" href="/products/men-pants/">Pants</a>
+                                <Link className="dropdown-item" to="/products/mens?categorytree=pant">Pants</Link>
                             </li>
                             <li>
-                                <a className="dropdown-item" href="/products/men-hoodies/"
-                                >Hoodies</a
-                                >
+                                <Link className="dropdown-item" to="/products/mens?categorytree=hoodie">Hoodies</Link>
                             </li>
                         </ul>
                     </li>
                     <li className="nav-item">
-                        <a
+                        <Link
                             className="nav-link active px-3"
                             aria-current="page"
-                            href="/products/kids"
-                        >Kids</a
-                        >
+                            to="/products/kids"
+                        >Kids</Link>
                     </li>
                     <li className="nav-item">
-                        <a
+                        <Link
                             className="nav-link active px-3"
                             aria-current="page"
-                            href="/contact-us"
-                        >Contact</a
-                        >
+                            to="/contact-us"
+                        >Contact</Link>
                     </li>
                 </ul>
             </div>

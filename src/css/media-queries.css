@@ -19,6 +19,10 @@
     max-width: 80%;
   }
 
+  .product-card .card-body {
+    grid-template-rows: repeat(4, auto);
+  }
+
   /* div.top-banner{
     padding-block: 25vh;
   } */

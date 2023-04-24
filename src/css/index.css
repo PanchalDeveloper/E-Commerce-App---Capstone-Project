@@ -11,13 +11,13 @@
 
 /* Navbar Fontawsome Icons */
 .nav-belt .fa-solid {
-  color: var(--app-global-clr-1);
+  color: var(--app-global-clr-3);
 }
 .nav-belt .fa-solid:hover {
-  color: var(--app-global-clr-1-1);
+  color: var(--app-global-clr-3-1);
 }
 .nav-belt .fa-solid:is(:active, :focus, :focus-within) {
-  color: var(--app-global-clr-1-2);
+  color: var(--app-global-clr-3-2);
 }
 
 :where(.nav-main .nav-item, .dropdown-item):where(.active, :active, :focus, :focus-within) {
@@ -37,7 +37,7 @@ main{
 div.top-banner {
   color: var(--app-global-clr-4);
   background-image: var(--bg-img, url("../images/banner-img-1.webp"));
-  background-color: var(--app-global-clr-3-1);
+  background-color: var(--app-global-clr-3-2);
   padding-block: calc(var(--bg-img-gap-y, 60vh) / 2);
   background-size: cover;
   background-position: center;
@@ -67,6 +67,13 @@ div.top-banner {
 
 .featured-products .product-cards {
   justify-content: center;
+}
+
+.product-card .card-body {
+  grid-template-rows: 38% 12% 32% 14%;
+}
+.product-card .card-body .item-name {
+  --max-lines: 3;
 }
 
 /* Handling Feature Products Card Text Overflow */
